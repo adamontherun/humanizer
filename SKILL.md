@@ -1,13 +1,10 @@
 ---
 name: humanizer
-version: 2.8.2
-description: |
-  Remove signs of AI-generated writing from text. Use when editing or reviewing
-  text to make it sound more natural and human-written. Based on Wikipedia's
-  comprehensive "Signs of AI writing" guide. Detects and fixes patterns including:
-  inflated symbolism, promotional language, superficial -ing analyses, vague
-  attributions, em dash overuse, rule of three, AI vocabulary words, passive
-  voice, negative parallelisms, and filler phrases.
+version: 2.9.0
+description: >
+  Remove signs of AI-generated writing from text so it sounds natural and
+  human-written. Use when humanizing, editing, or reviewing prose for AI tells,
+  AI-isms, chatbot tone, or "make this sound less like AI."
 license: MIT
 compatibility: any-agent
 allowed-tools:
@@ -178,6 +175,20 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 **After:**
 > Somali cuisine also includes camel meat, which is considered a delicacy. Pasta dishes, introduced during Italian colonization, remain common, especially in the south.
+
+**Coding-agent vocabulary** (Claude-heavy construction metaphors; shared Claude/Codex dialect). Flag density and clusters, not isolated legitimate engineering uses.
+
+**Construction family:** load-bearing, scaffolding, hinge, substrate, heavy lifting, structural / framework / foundation (when meaning "important")
+
+**Shared agent dialect:** seam, blast radius, surface (verb), carve out, wire up, harness (non-literal), guardrail, the ask, north star, papercut / sharp edges, happy path (rhetorical, not testing), opinionated (empty praise)
+
+**Density:** one real "seam" or "blast radius" is fine; several construction metaphors in a short span means decorating importance. Name the concrete dependency instead. Do not synonym-cycle within the same metaphor family.
+
+**Before:**
+> Auth is the load-bearing seam in this harness. The scaffolding around the session substrate does the heavy lifting, and that hinge is structural to the whole framework.
+
+**After:**
+> Auth has to work or nothing else does. Session state lives in one module; the rest of the app depends on it.
 
 
 ### 8. Avoidance of "is"/"are" (Copula Avoidance)
