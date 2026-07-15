@@ -193,6 +193,7 @@ The skill also includes a final "obviously AI generated" audit pass and a second
 
 ## Version History
 
+- **2.9.1** - Tightened pattern #7: construction metaphors (load-bearing, scaffolding, hinge, etc.) are cut, not treated as acceptable sparse technical diction. Still 33 patterns.
 - **2.9.0** - Extended pattern #7 with coding-agent vocabulary (Claude construction metaphors and shared Claude/Codex dialect). Shortened the skill frontmatter description to routing-only WHAT/WHEN triggers. Still 33 patterns.
 - **2.8.2** - Replaced the full before/after example with a first-person Lisbon trip recap. The after now keeps the same topic, perspective, and rough length as the before while removing the AI tells without becoming clipped or slogan-like. No change to the 33 patterns.
 - **2.8.1** - Added cross-agent installation docs, optional Claude Code plugin packaging, and a compact secondhand-text false-positive guard. No change to the 33 patterns.

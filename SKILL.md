@@ -1,6 +1,6 @@
 ---
 name: humanizer
-version: 2.9.0
+version: 2.9.1
 description: >
   Remove signs of AI-generated writing from text so it sounds natural and
   human-written. Use when humanizing, editing, or reviewing prose for AI tells,
@@ -176,13 +176,11 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 **After:**
 > Somali cuisine also includes camel meat, which is considered a delicacy. Pasta dishes, introduced during Italian colonization, remain common, especially in the south.
 
-**Coding-agent vocabulary** (Claude-heavy construction metaphors; shared Claude/Codex dialect). Flag density and clusters, not isolated legitimate engineering uses.
+**Coding-agent vocabulary** (Claude-heavy construction metaphors; shared Claude/Codex dialect).
 
-**Construction family:** load-bearing, scaffolding, hinge, substrate, heavy lifting, structural / framework / foundation (when meaning "important")
+**Construction family — cut these.** Do not keep them as "precise" technical diction. Replace with what the sentence actually means: load-bearing, scaffolding, hinge, substrate, heavy lifting, structural / framework / foundation (when meaning "important").
 
-**Shared agent dialect:** seam, blast radius, surface (verb), carve out, wire up, harness (non-literal), guardrail, the ask, north star, papercut / sharp edges, happy path (rhetorical, not testing), opinionated (empty praise)
-
-**Density:** one real "seam" or "blast radius" is fine; several construction metaphors in a short span means decorating importance. Name the concrete dependency instead. Do not synonym-cycle within the same metaphor family.
+**Shared agent dialect — flag clusters and filler uses:** seam, blast radius, surface (verb), carve out, wire up, harness (non-literal), guardrail, the ask, north star, papercut / sharp edges, happy path (rhetorical, not testing), opinionated (empty praise). Prefer naming the concrete dependency, boundary, or risk instead of cycling synonyms in this register.
 
 **Before:**
 > Auth is the load-bearing seam in this harness. The scaffolding around the session substrate does the heavy lifting, and that hinge is structural to the whole framework.
